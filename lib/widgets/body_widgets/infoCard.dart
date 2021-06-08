@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rocket_clone/constants.dart';
+import 'package:rocket_clone/utils/routes.dart';
 
 class InfoCard extends StatelessWidget {
   @override
@@ -37,16 +38,16 @@ class InfoCard extends StatelessWidget {
               children: <Widget>[
                 Container(
                   height: 50,
-                  decoration: new BoxDecoration(
-                    image: new DecorationImage(
-                      image: new AssetImage("assets/images/metlife-logo.jpg"),
-                      fit: BoxFit.cover,
-                    ),
+                  child: InkWell(
+                    child: Icon(Icons.coronavirus_outlined,
+                        size: 35, color: rRocketColor),
+                    onTap: () =>
+                        Navigator.pushNamed(context, MyRoutes.addmoneyRoute),
                   ),
                 ),
                 Container(
                   padding: EdgeInsets.fromLTRB(0, 3, 0, 0),
-                  child: Text("MetLife"),
+                  child: Text("Corona Info"),
                 )
               ],
             )),
@@ -55,17 +56,17 @@ class InfoCard extends StatelessWidget {
               children: <Widget>[
                 Container(
                   height: 50,
-                  decoration: new BoxDecoration(
-                    image: new DecorationImage(
-                      image: new AssetImage("assets/images/metlife-logo.jpg"),
-                      fit: BoxFit.cover,
-                    ),
+                  child: InkWell(
+                    child: Icon(Icons.link_outlined,
+                        size: 35, color: rRocketColor),
+                    onTap: () =>
+                        Navigator.pushNamed(context, MyRoutes.addmoneyRoute),
                   ),
                   width: size.width,
                 ),
                 Container(
                   padding: EdgeInsets.fromLTRB(0, 3, 0, 0),
-                  child: Text("MetLife"),
+                  child: Text("Sli"),
                 )
               ],
             )),

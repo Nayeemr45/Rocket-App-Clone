@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rocket_clone/widgets/body_widgets/addsCard.dart';
+import 'package:rocket_clone/widgets/body_widgets/bottomnav.dart';
 import 'package:rocket_clone/widgets/body_widgets/header.dart';
 import 'package:rocket_clone/widgets/body_widgets/infoCard.dart';
 import 'package:rocket_clone/widgets/body_widgets/linksCard.dart';
@@ -19,7 +20,8 @@ class Body extends StatelessWidget {
           InfoCard(),
           AddsCard(),
           //SliderAdd(),
-          LinksCard()
+          LinksCard(),
+          BottomNav(),
         ],
       ),
     );

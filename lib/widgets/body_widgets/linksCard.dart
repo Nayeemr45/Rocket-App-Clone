@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rocket_clone/constants.dart';
+import 'package:rocket_clone/utils/routes.dart';
 
 class LinksCard extends StatefulWidget {
   @override
@@ -27,17 +28,27 @@ class _LinksCardState extends State<LinksCard> {
                   child: Column(
                 children: <Widget>[
                   Container(
-                    height: 50,
-                    decoration: new BoxDecoration(
-                      image: new DecorationImage(
-                        image: new AssetImage("assets/images/metlife-logo.jpg"),
-                        fit: BoxFit.cover,
-                      ),
+                    child: InkWell(
+                      child: Icon(Icons.add_circle_outline_rounded,
+                          size: 35, color: rRocketColor),
+                      onTap: () =>
+                          Navigator.pushNamed(context, MyRoutes.addmoneyRoute),
                     ),
+                    width: 65,
+                    decoration: BoxDecoration(
+                        color: Colors.black12,
+                        borderRadius: BorderRadius.circular(50)),
+                    height: 65,
+                    // decoration: new BoxDecoration(
+                    //   image: new DecorationImage(
+                    //     image: new AssetImage("assets/images/metlife-logo.jpg"),
+                    //     fit: BoxFit.cover,
+                    //   ),
+                    // ),
                   ),
                   Container(
                     padding: EdgeInsets.fromLTRB(0, 3, 0, 20),
-                    child: Text("MetLife"),
+                    child: Text("Add Money"),
                   )
                 ],
               )),
@@ -45,17 +56,21 @@ class _LinksCardState extends State<LinksCard> {
                   child: Column(
                 children: <Widget>[
                   Container(
-                    height: 50,
-                    decoration: new BoxDecoration(
-                      image: new DecorationImage(
-                        image: new AssetImage("assets/images/metlife-logo.jpg"),
-                        fit: BoxFit.cover,
-                      ),
+                    width: 65,
+                    decoration: BoxDecoration(
+                        color: Colors.black12,
+                        borderRadius: BorderRadius.circular(50)),
+                    height: 65,
+                    child: InkWell(
+                      child: Icon(Icons.mobile_friendly_outlined,
+                          size: 35, color: rRocketColor),
+                      onTap: () =>
+                          Navigator.pushNamed(context, MyRoutes.addmoneyRoute),
                     ),
                   ),
                   Container(
                     padding: EdgeInsets.fromLTRB(0, 3, 0, 20),
-                    child: Text("MetLife"),
+                    child: Text("Mobile Recharge"),
                   )
                 ],
               )),
@@ -63,17 +78,24 @@ class _LinksCardState extends State<LinksCard> {
                   child: Column(
                 children: <Widget>[
                   Container(
-                    height: 50,
-                    decoration: new BoxDecoration(
-                      image: new DecorationImage(
-                        image: new AssetImage("assets/images/metlife-logo.jpg"),
-                        fit: BoxFit.cover,
+                    width: 65,
+                    decoration: BoxDecoration(
+                        color: Colors.black12,
+                        borderRadius: BorderRadius.circular(50)),
+                    height: 65,
+                    child: InkWell(
+                      child: Icon(
+                        Icons.payment,
+                        size: 35,
+                        color: rRocketColor,
                       ),
+                      onTap: () =>
+                          Navigator.pushNamed(context, MyRoutes.addmoneyRoute),
                     ),
                   ),
                   Container(
                     padding: EdgeInsets.fromLTRB(0, 3, 0, 20),
-                    child: Text("MetLife"),
+                    child: Text("Bill Pay"),
                   )
                 ],
               )),
@@ -85,17 +107,31 @@ class _LinksCardState extends State<LinksCard> {
                   child: Column(
                 children: <Widget>[
                   Container(
-                    height: 50,
-                    decoration: new BoxDecoration(
-                      image: new DecorationImage(
-                        image: new AssetImage("assets/images/metlife-logo.jpg"),
-                        fit: BoxFit.cover,
+                    width: 65,
+                    decoration: BoxDecoration(
+                        color: Colors.black12,
+                        borderRadius: BorderRadius.circular(50)),
+                    height: 65,
+                    child: InkWell(
+                      borderRadius: BorderRadius.circular(10),
+                      child: Icon(
+                        Icons.payments_outlined,
+                        size: 35,
+                        color: rRocketColor,
                       ),
+                      onTap: () =>
+                          Navigator.pushNamed(context, MyRoutes.addmoneyRoute),
                     ),
+                    // decoration: new BoxDecoration(
+                    //   image: new DecorationImage(
+                    //     image: new AssetImage("assets/images/metlife-logo.jpg"),
+                    //     fit: BoxFit.cover,
+                    //   ),
+                    // ),
                   ),
                   Container(
                     padding: EdgeInsets.fromLTRB(0, 3, 0, 20),
-                    child: Text("MetLife"),
+                    child: Text("Merchant Pay"),
                   )
                 ],
               )),
@@ -103,17 +139,21 @@ class _LinksCardState extends State<LinksCard> {
                   child: Column(
                 children: <Widget>[
                   Container(
-                    height: 50,
-                    decoration: new BoxDecoration(
-                      image: new DecorationImage(
-                        image: new AssetImage("assets/images/metlife-logo.jpg"),
-                        fit: BoxFit.cover,
-                      ),
+                    width: 65,
+                    decoration: BoxDecoration(
+                        color: Colors.black12,
+                        borderRadius: BorderRadius.circular(50)),
+                    height: 65,
+                    child: InkWell(
+                      child: Icon(Icons.send_to_mobile_outlined,
+                          size: 35, color: rRocketColor),
+                      onTap: () =>
+                          Navigator.pushNamed(context, MyRoutes.addmoneyRoute),
                     ),
                   ),
                   Container(
                     padding: EdgeInsets.fromLTRB(0, 3, 0, 20),
-                    child: Text("MetLife"),
+                    child: Text("Send Money"),
                   )
                 ],
               )),
@@ -121,75 +161,49 @@ class _LinksCardState extends State<LinksCard> {
                   child: Column(
                 children: <Widget>[
                   Container(
-                    height: 50,
-                    decoration: new BoxDecoration(
-                      image: new DecorationImage(
-                        image: new AssetImage("assets/images/metlife-logo.jpg"),
-                        fit: BoxFit.cover,
-                      ),
+                    width: 65,
+                    decoration: BoxDecoration(
+                        color: Colors.black12,
+                        borderRadius: BorderRadius.circular(50)),
+                    height: 65,
+                    child: InkWell(
+                      child: Icon(Icons.money_outlined,
+                          size: 35, color: rRocketColor),
+                      onTap: () =>
+                          Navigator.pushNamed(context, MyRoutes.addmoneyRoute),
                     ),
                   ),
                   Container(
                     padding: EdgeInsets.fromLTRB(0, 3, 0, 20),
-                    child: Text("MetLife"),
+                    child: Text("Cash Out"),
                   )
                 ],
               )),
             ],
           ),
           Row(
+            mainAxisAlignment: MainAxisAlignment.end,
             children: <Widget>[
               Expanded(
                   child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: <Widget>[
                   Container(
-                    height: 50,
-                    decoration: new BoxDecoration(
-                      image: new DecorationImage(
-                        image: new AssetImage("assets/images/metlife-logo.jpg"),
-                        fit: BoxFit.cover,
-                      ),
+                    width: 65,
+                    decoration: BoxDecoration(
+                        color: Colors.black12,
+                        borderRadius: BorderRadius.circular(50)),
+                    height: 65,
+                    child: InkWell(
+                      child: Icon(Icons.transform_outlined,
+                          size: 35, color: rRocketColor),
+                      onTap: () =>
+                          Navigator.pushNamed(context, MyRoutes.addmoneyRoute),
                     ),
                   ),
                   Container(
                     padding: EdgeInsets.fromLTRB(0, 3, 0, 0),
-                    child: Text("MetLife"),
-                  )
-                ],
-              )),
-              Expanded(
-                  child: Column(
-                children: <Widget>[
-                  Container(
-                    height: 50,
-                    decoration: new BoxDecoration(
-                      image: new DecorationImage(
-                        image: new AssetImage("assets/images/metlife-logo.jpg"),
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-                  ),
-                  Container(
-                    padding: EdgeInsets.fromLTRB(0, 3, 0, 0),
-                    child: Text("MetLife"),
-                  )
-                ],
-              )),
-              Expanded(
-                  child: Column(
-                children: <Widget>[
-                  Container(
-                    height: 50,
-                    decoration: new BoxDecoration(
-                      image: new DecorationImage(
-                        image: new AssetImage("assets/images/metlife-logo.jpg"),
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-                  ),
-                  Container(
-                    padding: EdgeInsets.fromLTRB(0, 3, 0, 0),
-                    child: Text("MetLife"),
+                    child: Text("Bank Transfer"),
                   )
                 ],
               )),
